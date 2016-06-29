@@ -1,0 +1,17 @@
+{
+  "name": "abv3",
+  "private": true,
+  "dependencies": {
+    "angular": "^1.5.7",
+    "jquery": "^3.0.0",
+    "angular-strap": "^2.3.9",
+    "angular-ui-router": "^0.3.1",
+    "angular-motion": "^0.4.4",
+    "bootstrap": "^3.3.6"
+  },
+  "overrides": {},
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
+  }
+}
