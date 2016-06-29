@@ -1,4 +1,44 @@
 *.log
+
+## Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+## OS X
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+# Ignore cache
+/.sass-cache
+/.cache
+
+sitemap.xml
+sitemap.xml.gz
+wp-blog-header.php
+wp-cron.php
+wp-mail.php
+wp-settings.php
+readme.html
+wp-links-opml.php
+wp-signup.php
+wp-activate.php
+wp-config-sample.php
+wp-load.php
+wp-trackback.php
+wp-login.php
+xmlrpc.php
+wp-admin/
+wp-includes/
+wp-content/plugins/duplicator/
+wp-snapshots/
+wp-content/languages/
 wp-config.php
 wp-content/advanced-cache.php
 wp-content/backup-db/
@@ -9,6 +49,7 @@ wp-content/upgrade/
 wp-content/uploads/
 wp-content/wp-cache-config.php
 wp-content/plugins/hello.php
+wp-content/plugins/rest-api
 
 /.htaccess
 /license.txt
