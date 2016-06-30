@@ -11,13 +11,15 @@
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/angular-motion/dist/angular-motion.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
-    <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/bower_components/angular-motion/dist/angular-motion.min.css">
-    <link rel="stylesheet" href="main.css">
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
 
 </head>
@@ -27,23 +29,25 @@
     your browser</a> to improve your experience.</p>
 <![endif]-->
 
-
-<h1>1 + 2 = {{1 + 5}}</h1>
+<ul>
+    <a ui-sref="home">Home</a>
+    <a ui-sref="personal-dashboard">Personal Dashboard</a>
+    <a ui-sref="global-dashboard">Global Dashboard</a>
+</ul>
 
 <div ui-view></div>
 <!-- We'll also add some navigation: -->
 
-<ul>
-    <li><a ui-sref="home">Home</a></li>
-    <li><a ui-sref="personal-dashboard">Personal Dashboard</a></li>
-    <li><a ui-sref="global-dashboard">Global Dashboard</a></li>
-</ul>
 
 <!-- build:js scripts/vendor.js -->
 <!-- bower:js -->
 <script src="/bower_components/jquery/dist/jquery.js"></script>
 <script src="/bower_components/angular/angular.js"></script>
-<script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="/bower_components/angular-strap/dist/angular-strap.js"></script>
+<script src="/bower_components/angular-strap/dist/angular-strap.tpl.js"></script>
+<script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="/bower_components/angular-animate/angular-animate.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 
@@ -54,10 +58,9 @@
 <!-- endbuild -->
 
 <!-- build:js scripts/main.js -->
-<script src="scripts/init.js"></script>
+<script src="scripts/main.js"></script>
 <script src="scripts/route.js"></script>
 <script src="partials/home/home.controller.js"></script>
-<script src="scripts/main.js"></script>
 <!-- endbuild -->
 </body>
 </html>

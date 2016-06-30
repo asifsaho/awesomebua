@@ -1,18 +1,14 @@
 (function () {
     'use strict';
 
-    var awesomebua = angular.module('awesomebua', ['ui.router', 'mgcrea.ngStrap']);
-
-    awesomebua.config(function ($stateProvider, $urlRouterProvider) {
-        //
-        // For any unmatched url, redirect to /state1
+    angular.module('awesomebua').config(function ($stateProvider, $urlRouterProvider) {
         $urlRouterProvider.otherwise("/");
         //
         // Now set up the states
         $stateProvider
             .state('home', {
                 url: '/',
-                templateUrl: 'partials/home/home.html'
+                templateUrl: 'partials/home/home.html',
                 controller: 'homeController'
             })
             .state('global-dashboard', {
