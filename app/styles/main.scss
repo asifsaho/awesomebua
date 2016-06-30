@@ -1,19 +1,33 @@
 // bower:scss
 // endbower
 
-.modal-backdrop.am-fade {
-  opacity: .5;
-  transition: opacity .15s linear;
-  &.ng-enter {
-    opacity: 0;
-    &.ng-enter-active {
-      opacity: .5;
-    }
-  }
-  &.ng-leave {
-    opacity: .5;
-    &.ng-leave-active {
-      opacity: 0;
-    }
-  }
-}
+
+// ==========================================================================
+// $Utilities
+// ==========================================================================
+@import 'utilities/colors';
+@import 'utilities/mixins';
+@import 'utilities/typography';
+@import 'utilities/functions';
+@import 'utilities/helpers';
+@import 'utilities/fonts';
+
+
+//Partials
+@import '../partials/header/header';
+@import '../partials/home/home';
+@import '../partials/global-dashboard/global.dashboard';
+@import '../partials/personal-dashboard/personal.dashboard';
+
+//Animations
+@import "ng-animate";
+
+// ==========================================================================
+// $Layout
+// ==========================================================================
+//@import 'layout/header';
+//@import 'layout/nav';
+//@import 'layout/sidebar';
+//@import 'layout/main';
+//@import 'layout/inner-page';
+//@import 'layout/footer';

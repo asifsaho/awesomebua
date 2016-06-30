@@ -3,12 +3,13 @@
   "private": true,
   "dependencies": {
     "angular": "^1.5.7",
-    "jquery": "^3.0.0",
     "angular-strap": "^2.3.9",
     "angular-ui-router": "^0.3.1",
     "bootstrap": "^3.3.6",
     "angular-animate": "^1.5.7",
-    "angular-motion": "^0.4.4"
+    "angular-motion": "^0.4.4",
+    "normalize-css": "normalize.css#^4.2.0",
+    "jquery": "1.9.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",
