@@ -221,20 +221,6 @@ $base-space-unit : 10px;
 .break-word         { word-wrap: break-word; }
 .no-wrap            { white-space: nowrap !important; }
 
-
-/*
- * Hide visually and from screen readers:
- * http://juicystudio.com/article/screen-readers-display-none.php
- */
-
-.hidden {
-  display: none !important;
-  visibility: hidden;
-}
-.hide {
-  display: none;
-}
-
 /*
  * Hide only visually, but have it available for screen readers:
  * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
