@@ -4,12 +4,11 @@
 
 (function(){
     'use strict';
-    var app = angular.module('awesomebua');
 
-    app.directive('mainHeader', function(){
+    angular.module('awesomebua').directive('homeHeader', function(){
         return {
             restrict: 'E',
-            templateUrl: 'app/module/header/header.tpl.html'
+            templateUrl: 'partials/header/home-header.tpl.html'
         }
     });
 })();

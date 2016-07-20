@@ -2,9 +2,7 @@
     'use strict';
 
     angular.module('awesomebua').config(function ($stateProvider, $urlRouterProvider) {
-        $urlRouterProvider.otherwise("/");
-        //
-        // Now set up the states
+        $urlRouterProvider.otherwise('/');
         $stateProvider
             .state('home', {
                 url: '/',
@@ -12,12 +10,12 @@
                 controller: 'homeController'
             })
             .state('global-dashboard', {
-                url: "/global-dashboard",
-                templateUrl: "partials/global-dashboard/global-dashboard.html"
+                url: '/global-dashboard',
+                templateUrl: 'partials/global-dashboard/global-dashboard.html'
             })
             .state('personal-dashboard', {
-                url: "/personal-dashboard",
-                templateUrl: "partials/personal-dashboard/personal-dashboard.html"
+                url: '/personal-dashboard',
+                templateUrl: 'partials/personal-dashboard/personal-dashboard.html'
             });
     });
 })();
