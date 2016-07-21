@@ -1,0 +1,10 @@
+body {
+  font-family: $baseFont;
+}
+
+@media (max-width: 600px) {
+  .mobile-container {
+    max-width: 300px;
+    margin: auto;
+  }
+}

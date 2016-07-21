@@ -1,9 +1,24 @@
 (function () {
     'use strict';
 
-    angular.module('awesomebua').controller('homeController', function ($scope) {
+    angular.module('awesomebua').controller('homeController', function ($scope, $sce) {
 
-        $scope.title = 'this a demo title for home';
+        $scope.tabs = [
+            {
+                "title": "Login",
+                "content": "Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee."
+            },
+            {
+                "title": "Register",
+                "content": "Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee."
+            }
+        ];
+
+        $scope.tabs.activeTab = "Login";
+
+        $scope.changeAction = function(){
+            console.log('wefwef');
+        };
 
         //$scope.modal = {
         //    "title": "Titlemama",
@@ -12,4 +27,3 @@
     });
 
 })();
-

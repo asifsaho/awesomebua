@@ -1,0 +1,67 @@
+label {
+  width: 100%;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"] {
+  border: 0;
+  box-shadow: none;
+  width: 100%;
+  border-bottom: 2px solid $color-text-normal;
+  padding: 28px 0;
+  border-radius: 0;
+  font-size: 16px;
+  &:hover {
+    box-shadow: none;
+  }
+  &:focus {
+    border-bottom: 2px solid $color-primary;
+  }
+}
+
+.form-group {
+  color: $color-text-normal;
+  font-weight: 100;
+  font-size: 16px;
+}
+
+label {
+  color: $color-text-normal;
+  font-weight: 100;
+}
+
+.btn {
+  margin-top: 10px;
+  padding: 12px 0;
+  font-size: 20px;
+  font-weight: 100;
+  font-family: $baseFont;
+}
+.btn-primary {
+  background: $color-primary;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0 5px 30px $color-primary;
+}
+
+
+.fancy-form-group {
+  position: relative;
+  label {
+    position: absolute;
+    top: 15px;
+    transform-origin: left;
+    transition: top 300ms;
+  }
+  input:focus {
+    outline: 0;
+    box-shadow: none;
+  }
+  input:focus + label {
+    top: -5px;
+    color: $color-primary;
+    transform: scale(.7);
+    transition: transform 300ms, top 300ms;
+  }
+}
