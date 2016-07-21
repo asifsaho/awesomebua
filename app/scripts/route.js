@@ -7,19 +7,20 @@
             .state('home', {
                 url: '/',
                 templateUrl: 'partials/home/home.tpl.html',
-                controller: 'homeController'
+                controller: 'HomeController'
             })
             .state('global-dashboard', {
                 url: '/global-dashboard',
-                templateUrl: 'partials/global-dashboard/global-dashboard.tpl.html'
+                templateUrl: 'partials/global-dashboard/global.dashboard.tpl.html'
             })
             .state('personal-dashboard', {
                 url: '/personal-dashboard',
-                templateUrl: 'partials/personal-dashboard/personal-dashboard.tpl.html'
+                templateUrl: 'partials/personal-dashboard/personal.dashboard.tpl.html',
+                controller: 'PersonalDashboardController'
             })
             .state('forgot', {
                 url: '/forgot',
-                templateUrl: 'partials/forgot-password/forgot-password.tpl.html'
+                templateUrl: 'partials/forgot-password/forgot.password.tpl.html'
             });
     });
 })();

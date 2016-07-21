@@ -8,7 +8,7 @@
     angular.module('awesomebua').directive('homeHeader', function(){
         return {
             restrict: 'E',
-            templateUrl: 'partials/header/home-header.tpl.html'
+            templateUrl: 'partials/header/home.header.tpl.html'
         }
     });
 })();
