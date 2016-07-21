@@ -1,5 +1,13 @@
 body {
   font-family: $baseFont;
+  padding-bottom: 30px;
+}
+
+.mobile-container {
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 960px;
+  margin: auto;
 }
 
 @media (max-width: 600px) {

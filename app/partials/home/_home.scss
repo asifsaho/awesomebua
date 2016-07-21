@@ -15,11 +15,13 @@
       font-size: 18px;
       padding: 14px 0;
       display: block;
-      border-bottom: 2px solid #fff;
+      border-top: 1px solid lighten($color-text-normal, 15%);
+      font-weight: 100;
+      font-family: $baseFont;
     }
     &.active a {
       color: $color-primary;
-      border-bottom: 2px solid $color-primary;
+      border-top: 3px solid $color-primary;
     }
   }
 }
