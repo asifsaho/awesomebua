@@ -58,7 +58,7 @@ label {
     outline: 0;
     box-shadow: none;
   }
-  input:focus + label {
+  input:focus + label, input.ng-not-empty + label {
     top: -5px;
     color: $color-primary;
     transform: scale(.7);

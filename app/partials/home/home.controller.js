@@ -1,23 +1,17 @@
 (function () {
     'use strict';
 
+
     angular.module('awesomebua').controller('homeController', function ($scope, $sce) {
 
-        $scope.tabs = [
-            {
-                "title": "Login",
-                "content": "Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee."
-            },
-            {
-                "title": "Register",
-                "content": "Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee."
-            }
-        ];
+        $scope.tab = 1;
 
-        $scope.tabs.activeTab = "Login";
+        $scope.setTab = function(newTab){
+          $scope.tab = newTab;
+        };
 
-        $scope.changeAction = function(){
-            console.log('wefwef');
+        $scope.isSet = function(tabNum){
+          return $scope.tab === tabNum;
         };
 
         //$scope.modal = {

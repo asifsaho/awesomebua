@@ -1,12 +1,29 @@
 .auth-tab {
+  ul {
+    padding: 0;
+    overflow: hidden;
+  }
   li {
     width: 50%;
     text-align: center;
+    display: block;
+    float: left;
+    list-style: none;
     a {
+      color: $color-text-normal;
+      text-decoration: none;
       font-size: 18px;
+      padding: 14px 0;
+      display: block;
+      border-bottom: 2px solid #fff;
+    }
+    &.active a {
+      color: $color-primary;
+      border-bottom: 2px solid $color-primary;
     }
   }
-  .tab-content {
-    padding-top: 30px;
-  }
+}
+
+.tab-content {
+  padding-top: 30px;
 }
