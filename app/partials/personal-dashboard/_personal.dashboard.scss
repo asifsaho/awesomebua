@@ -1,0 +1,158 @@
+.dashboard-mode-menu {
+  padding: 0;
+  float: left;
+  width: 100%;
+  li {
+    list-style: none;
+    width: 50%;
+    float: left;
+    text-align: center;
+    a {
+      color: $color-text-normal;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 14px 0;
+      display: block;
+      font-weight: 100;
+      font-family: $baseFont;
+    }
+    &.active a {
+      color: $color-primary;
+      border-top: 3px solid $color-primary;
+    }
+  }
+}
+
+.cover {
+  position: relative;
+  float: left;
+  width: 100%;
+  &:after {
+    display: block;
+    content: '';
+    position: absolute;
+    background: rgba(0,0,0,.3);
+    top: 0;
+    height: 100%;
+    width: 100%;
+  }
+  p {
+    color: $color-white;
+    font-size: 20px;
+  }
+  .status {
+    background-image: url('../images/left-quote.svg');
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: 15px 0;
+    position: absolute;
+    bottom: 20px;
+    z-index: 1;
+    padding: 0 30px 0 60px;
+    p {
+      padding: 0;
+    }
+  }
+}
+
+.date-booking-status {
+  position: relative;
+  float: left;
+  width: 100%;
+  .date {
+    font-size: 20px;
+    padding-left: 60px;
+    margin-top: 30px;
+    float: left;
+    width: 100%;
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      background: lighten($color-text-normal, 25%);
+      border-radius: 50%;
+      top: 3px;
+      left: 20px;
+      padding: 10px;
+    }
+    span {
+      display: block;
+      float: right;
+      background: $color-primary;
+      color: #fff;
+      font-size: 15px;
+      border-radius: 50%;
+      width: 25px;
+      height: 25px;
+      padding: 2px 0;
+      text-align: center;
+      margin-right: 25px;
+    }
+  }
+  ul {
+    padding-left: 60px;
+    float: left;
+    width: 100%;
+  }
+  li {
+    list-style: none;
+    background-size: 30px;
+    background-position: left center;
+    padding: 30px 20px 30px 50px;
+    font-size: 18px;
+    color: $color-text-normal;
+    font-weight: 100;
+    font-family: $baseFont;
+    background-repeat: no-repeat;
+    &:first-child { background-image: url('../images/breakfast.svg') }
+    &:nth-child(2) { background-image: url('../images/lunch.svg') }
+    &:nth-child(3) { background-image: url('../images/dinner.svg') }
+    &:nth-child(4) { background-image: url('../images/cart.svg') }
+    img {
+      float: right;
+      display: block;
+      position: relative;
+      top: -6px;
+      border-radius: 50%;
+    }
+    .guest-count {
+      background: $color-text-normal;
+      height: 35px;
+      width: 35px;
+      float: right;
+      position: relative;
+      top: -6px;
+      margin-left: 10px;
+      border-radius: 50%;
+      color: #fff;
+      font-size: 14px;
+      padding: 7px;
+      font-family: $baseFont;
+    }
+  }
+  &:after {
+    content: '';
+    padding: 1px;
+    height: 100%;
+    left: 29px;
+    background: lighten($color-text-normal, 25%);
+    display: block;
+    position: absolute;
+  }
+}
+
+.add-meal {
+  position: fixed;
+  background: $color-primary;
+  color: #fff;
+  font-size: 25px;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 50%;
+  right: 20px;
+  bottom: 20px;
+  z-index: 99;
+  box-shadow: 0 5px 30px $color-primary;
+}

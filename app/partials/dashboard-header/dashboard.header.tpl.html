@@ -1,12 +1,25 @@
-<header>
-    <a href="javascript:;">Dashboard</a>
+<header class="dash-header">
+    <a href="javascript:;" class="menu-trigger">
+        <i class="glyphicon glyphicon-menu-hamburger"></i>
+        Dashboard
+    </a>
 
     <button type="button"
-            data-animation="am-slide-right"
+            class="pull-right"
             bs-dropdown="dropdown"
             aria-haspopup="true"
             placement="bottom-right"
             aria-expanded="false">
-            Dropdown
+            <img src="images/more.svg" height="22">
+    </button>
+
+    <button type="button"
+            class="pull-right"
+            bs-dropdown="dropdown"
+            aria-haspopup="true"
+            placement="bottom-right"
+            aria-expanded="false">
+            <span class="notification-number">{{ notificationAmount }}</span>
+            <img src="images/bell.svg" height="22">
     </button>
 </header>

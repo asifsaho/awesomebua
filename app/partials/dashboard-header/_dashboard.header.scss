@@ -1,0 +1,52 @@
+.dash-header {
+  border-bottom: 1px solid lighten($color-text-normal, 20%);
+  padding: 10px 0;
+  float: left;
+  width: 100%;
+  .menu-trigger {
+    font-size: 18px;
+    color: $color-text-title;
+    i {
+      color: $color-text-normal;
+      position: relative;
+      top: 2px;
+      left: -2px;
+    }
+  }
+
+  [bs-dropdown="dropdown"] {
+    position: relative;
+    background: none;
+    border: 0;
+    .notification-number {
+      color: #fff;
+      background: red;
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 3px;
+      border-radius: 50%;
+      font-size: 8px;
+      padding: 2px;
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  .dropdown-menu {
+    &:focus {
+      outline: 0;
+    }
+    li {
+      overflow: hidden;
+    }
+    li a {
+      padding: 10px 10px;
+      display: block;
+      max-width: 200px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}

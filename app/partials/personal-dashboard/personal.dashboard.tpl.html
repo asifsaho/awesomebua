@@ -1,15 +1,165 @@
 <dash-header></dash-header>
 
 <div class="container">
-    <div class="dash-tab" ng-controller="PersonalDashboardController">
-        <h1>{{ title }}</h1>
-        <ul>
-            <li ng-class="{ active: isSet(1) }">
-                <a href ng-click="setTab(1)">Home</a>
-            </li>
-            <li ng-class="{ active: isSet(2) }">
-                <a href ng-click="setTab(2)">Registration</a>
-            </li>
-        </ul>
+    <div class="row">
+        <div class="dash-tab" ng-controller="PersonalDashboardController">
+            <ul class="dashboard-mode-menu">
+                <li class="active">
+                    <a>Personal</a>
+                </li>
+                <li>
+                    <a>Global</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="cover">
+            <img src="images/cover.jpg">
+            <div class="status">
+                <p ng-bind="status"></p>
+            </div>
+        </div>
+
+        <div class="date-booking-status">
+            <div class="day-status">
+                <p class="date">14 Feb '16 Sunday <span>4</span></p>
+                <ul>
+                    <li>Breakfast
+                        <span class="guest-count">+5</span>
+                        <img src="images/cover.jpg" height="35" width="35">
+                    </li>
+                    <li>Lunch <span class="guest-count">+5</span></li>
+                    <li>Dinner
+                        <span class="guest-count">+5</span>
+                        <img src="images/cover.jpg" height="35" width="35">
+                    </li>
+                    <li>Shopping</li>
+                </ul>
+            </div>
+
+            <div class="day-status">
+                <p class="date">14 Feb '16 Sunday <span>4</span></p>
+                <ul>
+                    <li>Breakfast
+                        <span class="guest-count">+5</span>
+                        <img src="images/cover.jpg" height="35" width="35">
+                    </li>
+                    <li>Lunch <span class="guest-count">+5</span></li>
+                    <li>Dinner
+                        <span class="guest-count">+5</span>
+                        <img src="images/cover.jpg" height="35" width="35">
+                    </li>
+                </ul>
+            </div>
+
+            <div class="day-status">
+                <p class="date">14 Feb '16 Sunday <span>4</span></p>
+                <ul>
+                    <li>Breakfast
+                        <span class="guest-count">+5</span>
+                        <img src="images/cover.jpg" height="35" width="35">
+                    </li>
+                    <li>Lunch <span class="guest-count">+5</span></li>
+                    <li>Dinner
+                        <span class="guest-count">+5</span>
+                        <img src="images/cover.jpg" height="35" width="35">
+                    </li>
+                </ul>
+            </div>
+
+            <div class="day-status">
+                <p class="date">14 Feb '16 Sunday <span>4</span></p>
+                <ul>
+                    <li>Breakfast
+                        <span class="guest-count">+5</span>
+                        <img src="images/cover.jpg" height="35" width="35">
+                    </li>
+                    <li>Lunch <span class="guest-count">+5</span></li>
+                    <li>Dinner
+                        <span class="guest-count">+5</span>
+                        <img src="images/cover.jpg" height="35" width="35">
+                    </li>
+                </ul>
+            </div>
+
+            <div class="day-status">
+                <p class="date">14 Feb '16 Sunday <span>4</span></p>
+                <ul>
+                    <li>Breakfast
+                        <span class="guest-count">+5</span>
+                        <img src="images/cover.jpg" height="35" width="35">
+                    </li>
+                    <li>Lunch <span class="guest-count">+5</span></li>
+                    <li>Dinner
+                        <span class="guest-count">+5</span>
+                        <img src="images/cover.jpg" height="35" width="35">
+                    </li>
+                </ul>
+            </div>
+
+            <div class="day-status">
+                <p class="date">14 Feb '16 Sunday <span>4</span></p>
+                <ul>
+                    <li>Breakfast
+                        <span class="guest-count">+5</span>
+                        <img src="images/cover.jpg" height="35" width="35">
+                    </li>
+                    <li>Lunch <span class="guest-count">+5</span></li>
+                    <li>Dinner
+                        <span class="guest-count">+5</span>
+                        <img src="images/cover.jpg" height="35" width="35">
+                    </li>
+                </ul>
+            </div>
+
+            <div class="day-status">
+                <p class="date">14 Feb '16 Sunday <span>4</span></p>
+                <ul>
+                    <li>Breakfast
+                        <span class="guest-count">+5</span>
+                        <img src="images/cover.jpg" height="35" width="35">
+                    </li>
+                    <li>Lunch <span class="guest-count">+5</span></li>
+                    <li>Dinner
+                        <span class="guest-count">+5</span>
+                        <img src="images/cover.jpg" height="35" width="35">
+                    </li>
+                </ul>
+            </div>
+
+            <div class="day-status">
+                <p class="date">14 Feb '16 Sunday <span>4</span></p>
+                <ul>
+                    <li>Breakfast
+                        <span class="guest-count">+5</span>
+                        <img src="images/cover.jpg" height="35" width="35">
+                    </li>
+                    <li>Lunch <span class="guest-count">+5</span></li>
+                    <li>Dinner
+                        <span class="guest-count">+5</span>
+                        <img src="images/cover.jpg" height="35" width="35">
+                    </li>
+                </ul>
+            </div>
+
+            <div class="day-status">
+                <p class="date">14 Feb '16 Sunday <span>4</span></p>
+                <ul>
+                    <li>Breakfast
+                        <span class="guest-count">+5</span>
+                        <img src="images/cover.jpg" height="35" width="35">
+                    </li>
+                    <li>Lunch <span class="guest-count">+5</span></li>
+                    <li>Dinner
+                        <span class="guest-count">+5</span>
+                        <img src="images/cover.jpg" height="35" width="35">
+                    </li>
+                </ul>
+            </div>
+
+            <a href="javascript:;" class="add-meal">
+                <i class="glyphicon glyphicon-plus"></i>
+            </a>
+        </div>
     </div>
 </div>
