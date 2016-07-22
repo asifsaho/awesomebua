@@ -11,11 +11,11 @@
             })
             .state('global-dashboard', {
                 url: '/global-dashboard',
-                templateUrl: 'partials/global-dashboard/global.dashboard.tpl.html'
+                templateUrl: 'partials/dashboard/global.dashboard.tpl.html'
             })
             .state('personal-dashboard', {
                 url: '/personal-dashboard',
-                templateUrl: 'partials/personal-dashboard/personal.dashboard.tpl.html',
+                templateUrl: 'partials/dashboard/personal.dashboard.tpl.html',
                 controller: 'PersonalDashboardController'
             })
             .state('forgot', {
