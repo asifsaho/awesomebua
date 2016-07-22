@@ -1,5 +1,45 @@
-<home-header></home-header>
+<dash-header></dash-header>
 
 <div class="container">
-    <h1>Hello from global dashboard</h1>
+    <div class="row">
+        <div class="dash-tab" ng-controller="GlobalDashboardController">
+            <ul class="dashboard-mode-menu">
+                <li>
+                    <a ui-sref="personal-dashboard">Personal</a>
+                </li>
+                <li class="active">
+                    <a ui-sref="global-dashboard">Global</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="cover">
+            <img src="images/cover.jpg">
+            <div class="status">
+                <p ng-bind="status"></p>
+            </div>
+        </div>
+
+        <div class="date-booking-status" ng-repeat="a in range(currentMonthDays) track by $index">
+            <div class="day-status">
+                <p class="date"> {{ $index + 1 }} Feb '16 Sunday <span>4</span></p>
+                <ul>
+                    <li>Breakfast
+                        <span class="guest-count">+5</span>
+                        <img src="images/cover.jpg" height="35" width="35">
+                    </li>
+                    <li>Lunch <span class="guest-count">+5</span></li>
+                    <li>Dinner
+                        <span class="guest-count">+5</span>
+                        <img src="images/cover.jpg" height="35" width="35">
+                    </li>
+                    <li>Shopping</li>
+                </ul>
+            </div>
+
+            <a href="javascript:;" class="add-meal">
+                <i class="glyphicon glyphicon-plus"></i>
+            </a>
+        </div>
+    </div>
 </div>
