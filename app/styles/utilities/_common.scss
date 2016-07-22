@@ -3,6 +3,10 @@ body {
   padding-bottom: 30px;
 }
 
+*:focus {
+  outline: 0;
+}
+
 img {
   max-width: 100%;
 }
