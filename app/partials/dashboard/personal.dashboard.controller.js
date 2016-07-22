@@ -81,6 +81,11 @@
                 "href": "javascript:;"
             }
         ];
+
+        $scope.aside = {
+            "title": "Title",
+            "content": "Hello Aside<br />This is a multiline message!"
+        };
     });
 
 })();
