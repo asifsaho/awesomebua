@@ -13,7 +13,38 @@
         }
     });
 
-    //angular.module('awesomebua').controller('DashboardHeader', function($scope){
-    //    $scope.title = 'This is title';
-    //})
+    angular.module('awesomebua').controller('DashboardHeaderController', function($scope){
+        $scope.notificationDropdown = [
+            {
+                "text": "This is a long example notification",
+                "href": "javascript:;"
+            },
+            {
+                "text": "lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+                "href": "javascript:;"
+            },
+            {
+                "text": "lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+                "href": "javascript:;"
+            }
+        ];
+
+        $scope.menuDropdown = [
+            {
+                "text": "Back",
+                "href": "javascript:;"
+            },
+            {
+                "text": "Profile",
+                "href": "javascript:;"
+            }
+        ];
+
+        $scope.slideMenuItems = [
+            { menuTitle: 'Home', menuLink : '#' },
+            { menuTitle: 'Dashboard', menuLink : 'personal-dashboard' },
+            { menuTitle: 'Global', menuLink : 'global-dashboard' },
+            { menuTitle: 'Profile', menuLink : '#' }
+        ];
+    })
 })();

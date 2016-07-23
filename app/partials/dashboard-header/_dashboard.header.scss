@@ -1,8 +1,23 @@
 .dash-header {
   border-bottom: 1px solid lighten($color-text-normal, 20%);
-  padding: 15px 0;
   float: left;
   width: 100%;
+  .dash-header-item {
+    padding: 15px 8px;
+    display: inline-block;
+    background: none;
+    color: #fff;
+    transition: background 200ms;
+    &:hover, &:hover {
+      background: $color-primary;
+      transition: background 200ms;
+      text-decoration: none;
+      color: #fff;
+      i {
+        color: #fff;
+      }
+    }
+  }
   .menu-trigger {
     font-size: 18px;
     color: $color-text-title;
@@ -21,10 +36,9 @@
     .notification-number {
       color: #fff;
       background: red;
-      display: block;
       position: absolute;
-      top: 0;
-      right: 3px;
+      top: 10px;
+      right: 0;
       border-radius: 50%;
       font-size: 8px;
       padding: 2px;
@@ -34,9 +48,8 @@
   }
 
   [bs-dropdown="menuDropdown"] {
-    background: none;
     border: 0;
-    margin: 0 10px;
+    margin: 0 20px;
   }
 
   .dropdown-menu {
