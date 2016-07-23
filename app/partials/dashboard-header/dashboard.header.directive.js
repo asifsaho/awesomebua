@@ -41,10 +41,10 @@
         ];
 
         $scope.slideMenuItems = [
-            { menuTitle: 'Home', menuLink : '#' },
+            { menuTitle: 'Home', menuLink : 'home' },
             { menuTitle: 'Dashboard', menuLink : 'personal-dashboard' },
             { menuTitle: 'Global', menuLink : 'global-dashboard' },
-            { menuTitle: 'Profile', menuLink : '#' }
+            { menuTitle: 'Profile', menuLink : 'profile' }
         ];
     })
 })();
