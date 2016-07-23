@@ -1,0 +1,35 @@
+<dash-header></dash-header>
+
+<div class="profile-page">
+    <ul rn-carousel rn-carousel-controls rn-carousel-transition="hexagon" class="rn-carousel profile-slider">
+        <li ng-repeat="profile in profiles">
+            <div class="profile-cover" style="background-image: url('{{profile.cover}}');"></div>
+
+            <div class="text-center">
+                <img class="propic" ng-src="{{profile.propic}}">
+            </div>
+
+            <p class="name" ng-bind="profile.name"></p>
+
+            <p class="title" ng-bind="profile.title"></p>
+            <p class="company" ng-bind="profile.company"></p>
+
+            <div class="text-center social-acc">
+                <a href="{{ profile.facebook }}"><img src="images/facebook.svg" height="18"></a>
+                <a href="{{ profile.twitter }}"><img src="images/twitter.svg" height="18"></a>
+                <a href="{{ profile.skype }}"><img src="images/skype.svg" height="18"></a>
+            </div>
+
+            <div class="contact text-center">
+                <a href="javascript:;"><img src="images/phone.svg" height="55"></a>
+                <a href="javascript:;"><img src="images/phone.svg" height="75"></a>
+                <a href="javascript:;"><img src="images/phone.svg" height="55"></a>
+            </div>
+        </li>
+    </ul>
+</div>
+
+
+<div class="summery">
+    
+</div>

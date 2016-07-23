@@ -20,3 +20,15 @@ body {
     margin: auto;
   }
 }
+
+.rn-carousel {
+  float: left;
+  width: 100%;
+  img {
+    max-width: 100%;
+  }
+}
+
+.clearfix {
+  @include clearfix();
+}

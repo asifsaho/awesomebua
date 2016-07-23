@@ -11,7 +11,8 @@
     "normalize-css": "normalize.css#^4.2.0",
     "jquery": "1.9.1",
     "animate.css": "^3.5.2",
-    "bootstrap-additions": "^0.3.1"
+    "bootstrap-additions": "^0.3.1",
+    "angular-carousel": "^1.0.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",
