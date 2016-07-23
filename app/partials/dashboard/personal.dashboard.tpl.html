@@ -1,6 +1,6 @@
 <dash-header></dash-header>
 
-<div class="dash-tab" ng-controller="PersonalDashboardController">
+<div class="dash-tab">
     <ul class="dashboard-mode-menu">
         <li class="active">
             <a ui-sref="personal-dashboard">Personal</a>
@@ -13,7 +13,9 @@
 
 <div class="cover" style="background-image: url(images/cover.jpg);">
     <div class="status container">
-        <p ng-bind="status"></p>
+        <ul>
+            <li ng-bind="status"></li>
+        </ul>
     </div>
 </div>
 

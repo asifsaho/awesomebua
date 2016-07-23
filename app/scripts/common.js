@@ -28,3 +28,18 @@ function months(currentYear){
         { name : 'December',    days : 31 }
     ];
 }
+
+var monthNames = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December'
+]; // all months

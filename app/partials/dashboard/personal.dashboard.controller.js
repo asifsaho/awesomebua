@@ -8,7 +8,6 @@
         $scope.status = 'I will be late today, please keep the door open'; // static status msg for future development
 
         var currentDate = new Date(); // current date
-        var monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']; // all months
 
         $scope.currentYear = currentDate.getFullYear(); // current year
         $scope.currentMonth = monthNames[currentDate.getMonth()]; // current month name

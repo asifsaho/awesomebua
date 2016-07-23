@@ -1,6 +1,6 @@
 <dash-header></dash-header>
 
-<div class="dash-tab" ng-controller="GlobalDashboardController">
+<div class="dash-tab">
     <ul class="dashboard-mode-menu">
         <li>
             <a ui-sref="personal-dashboard">Personal</a>
@@ -13,7 +13,9 @@
 
 <div class="cover" style="background-image: url(images/cover.jpg);">
     <div class="status container">
-        <p ng-bind="status"></p>
+        <ul>
+            <li ng-repeat="status in statuses"> {{ status.msg }} <sub>Posted by {{ status.user + ' on ' + status.date }}</sub> </li>
+        </ul>
     </div>
 </div>
 

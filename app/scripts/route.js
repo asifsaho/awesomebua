@@ -11,7 +11,8 @@
             })
             .state('global-dashboard', {
                 url: '/global-dashboard',
-                templateUrl: 'partials/dashboard/global.dashboard.tpl.html'
+                templateUrl: 'partials/dashboard/global.dashboard.tpl.html',
+                controller: 'GlobalDashboardController'
             })
             .state('personal-dashboard', {
                 url: '/dashboard',
