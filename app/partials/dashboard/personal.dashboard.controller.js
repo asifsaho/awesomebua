@@ -82,10 +82,12 @@
             }
         ];
 
-        //$scope.aside = {
-        //    "title": "Title",
-        //    "content": "Hello Aside<br />This is a multiline message!"
-        //};
+        $scope.slideMenuItems = [
+            { menuTitle: 'Home', menuLink : '#' },
+            { menuTitle: 'Dashboard', menuLink : '#' },
+            { menuTitle: 'Global', menuLink : '#' },
+            { menuTitle: 'Profile', menuLink : '#' }
+        ];
     });
 
 })();

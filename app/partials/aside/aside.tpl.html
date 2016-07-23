@@ -1,5 +1,20 @@
-<h1>Lorem ipsum dolor sit amet</h1>
+<div class="aside left am-slide-left" tabindex="-1" role="dialog">
+    <div class="aside-dialog">
+        <div class="aside-content">
+            <div class="aside-header">
+                <button type="button" class="close" ng-click="$hide()">×</button>
+                <h4 class="aside-title">Title</h4></div>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores doloribus eaque eius fugiat incidunt! Ab autem dolorem fugiat, fugit illo magni nulla odit praesentium provident quam qui quod, rerum voluptate.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores doloribus eaque eius fugiat incidunt! Ab autem dolorem fugiat, fugit illo magni nulla odit praesentium provident quam qui quod, rerum voluptate.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores doloribus eaque eius fugiat incidunt! Ab autem dolorem fugiat, fugit illo magni nulla odit praesentium provident quam qui quod, rerum voluptate.</p>
+            <div class="aside-body">
+                <ul class="nav bs-sidenav">
+                    <li ng-repeat="menuItem in slideMenuItems"><a href="{{ menuItem.menuLink }}">{{ menuItem.menuTitle }}</a></li>
+                </ul>
+            </div>
+
+            <!--<div class="aside-footer">-->
+                <!--<button type="button" class="btn btn-default" ng-click="$hide()">Close</button>-->
+                <!--<button type="button" class="btn btn-primary" ng-click="$hide()">Save changes</button>-->
+            <!--</div>-->
+        </div>
+    </div>
+</div>

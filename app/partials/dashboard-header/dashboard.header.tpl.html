@@ -1,13 +1,27 @@
-<header class="dash-header">
+<header class="dash-header" ng-controller="PersonalDashboardController">
     <a href="javascript:;"
        class="menu-trigger"
-       data-template-url="aside/aside.tpl.html"
        data-placement="left"
+       data-title="weoifj"
+       data-template-url="partials/aside/aside.tpl.html"
        data-animation="am-slide-left"
-       bs-aside="aside">
+       bs-aside="sideMenu">
         <i class="glyphicon glyphicon-menu-hamburger"></i>
         Dashboard
     </a>
+
+    <!-- You can use a custom html template with the `data-template` attr -->
+    <!--<button type="button"-->
+            <!--class="btn btn-lg btn-danger"-->
+            <!--data-template-url="partials/aside/aside.tpl.html"-->
+            <!--data-placement="left"-->
+            <!--data-animation="am-slide-left"-->
+            <!--bs-aside="aside"-->
+            <!--data-container="body">-->
+        <!--Custom aside-->
+        <!--<br>-->
+        <!--<small>(using data-template)</small>-->
+    <!--</button>-->
 
     <button type="button"
             class="pull-right"
