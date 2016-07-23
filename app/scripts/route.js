@@ -14,7 +14,7 @@
                 templateUrl: 'partials/dashboard/global.dashboard.tpl.html'
             })
             .state('personal-dashboard', {
-                url: '/personal-dashboard',
+                url: '/dashboard',
                 templateUrl: 'partials/dashboard/personal.dashboard.tpl.html',
                 controller: 'PersonalDashboardController'
             })

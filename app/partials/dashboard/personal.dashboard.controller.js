@@ -84,8 +84,8 @@
 
         $scope.slideMenuItems = [
             { menuTitle: 'Home', menuLink : '#' },
-            { menuTitle: 'Dashboard', menuLink : '#' },
-            { menuTitle: 'Global', menuLink : '#' },
+            { menuTitle: 'Dashboard', menuLink : 'personal-dashboard' },
+            { menuTitle: 'Global', menuLink : 'global-dashboard' },
             { menuTitle: 'Profile', menuLink : '#' }
         ];
     });
