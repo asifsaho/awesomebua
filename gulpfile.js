@@ -4,10 +4,10 @@ const gulpLoadPlugins = require('gulp-load-plugins');
 const browserSync = require('browser-sync');
 const del = require('del');
 const wiredep = require('wiredep').stream;
+const lazypipe = require('lazypipe');
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
-
 gulp.task('styles', () => {
   return gulp.src('app/styles/*.scss')
     .pipe($.plumber())
@@ -24,7 +24,7 @@ gulp.task('styles', () => {
 });
 
 gulp.task('scripts', () => {
-  return gulp.src('app/scripts/**/*.js')
+  return gulp.src('app/**/*.js')
     .pipe($.plumber())
     .pipe($.sourcemaps.init())
     .pipe($.babel())
@@ -61,10 +61,19 @@ gulp.task('lint:test', () => {
     .pipe(gulp.dest('test/spec/**/*.js'));
 });
 
-gulp.task('html', ['styles', 'scripts'], () => {
+const minify = lazypipe()
+  .pipe($.ngAnnotate)
+  .pipe($.uglify);
+
+gulp.task('templates', () => {
+  return gulp.src('app/**/*.tpl.html')
+    .pipe(gulp.dest('dist'))
+});
+
+gulp.task('pre-build', ['styles', 'scripts', 'templates'], () => {
   return gulp.src('app/*.html')
     .pipe($.useref({ searchPath: ['.tmp', 'app', '.'] }))
-    .pipe($.if('*.js', $.uglify()))
+    .pipe($.if('*.js', minify()))
     .pipe($.if('*.css', $.cssnano({
       safe: true,
       autoprefixer: false
@@ -173,7 +182,7 @@ gulp.task('wiredep', () => {
     .pipe(gulp.dest('app'));
 });
 
-gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {
+gulp.task('build', ['lint', 'pre-build', 'images', 'fonts', 'extras'], () => {
   return gulp.src('dist/**/*').pipe($.size({
     title: 'build',
     gzip: true
