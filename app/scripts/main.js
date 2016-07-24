@@ -6,7 +6,6 @@
             'ui.router',
             'mgcrea.ngStrap',
             'ngAnimate',
-            'angular-carousel'
         ]
     );
 })();

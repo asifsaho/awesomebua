@@ -3,41 +3,63 @@
   float: left;
   width: 100%;
   ul {
-    height: 590px;
+    padding: 0;
     margin: auto;
-    overflow: hidden;
   }
-  ul[rn-carousel] > li {
-    height: 550px;
-    background: #fff;
-    overflow: hidden;
+  li {
+    list-style: none;
   }
-  .rn-carousel-control {
-    background: rgba(0, 0, 0, .5);
-    position: absolute;
-    height: 250px;
-    width: 20px;
-    color: transparent;
-    top: 56px;
+
+  .bx-wrapper {
+    margin-bottom: 0;
+    border: 0;
+    background: none;
+    box-shadow: none;
+    img {
+      display: inline-block;
+    }
   }
-  .rn-carousel-control-next {
-    right: 0;
-  }
-  .rn-carousel-control-prev {
-    left: 0;
+
+  .profile-slider-wrapper {
+    position: relative;
+    max-width: calc(100% - 30px);
+    margin: 10px auto 0;
+    .bx-wrapper {
+      .bx-prev, .bx-next {
+        top: 26px;
+        background: rgba(0,0,0,.5);
+        display: block;
+        height: 160px;
+        width: 20px;
+        z-index: 99;
+      }
+      .bx-prev{
+        left: 10px;
+      }
+      .bx-next {
+        right: 10px;
+      }
+    }
   }
 }
 
 .profile-slider {
+  li {
+    padding: 10px 10px 50px 10px;
+  }
+  .slide-inner {
+    background: #fff;
+    box-shadow: 0 2px 20px #b9b9b9;
+  }
   .propic {
     border-radius: 50%;
-    width: 130px;
-    height: 130px;
-    margin-top: -65px;
+    width: 80px;
+    height: 80px;
+    margin-top: -45px;
     border: 5px solid #fff;
   }
   .profile-cover {
-    height: 250px;
+    height: 160px;
     background-size: cover;
     background-position: center;
   }
@@ -64,12 +86,26 @@
   }
 
   .contact {
-    margin-top: 35px;
+    position: relative;
+    top: 35px;
     a {
       display: inline-block;
       margin-right: 25px;
+      border-radius: 50%;
+      padding: 15px;
+      &:first-child {
+        background: $color-green;
+        box-shadow: 0 0 20px $color-green;
+      }
+      &:nth-child(2) {
+        background: $color-primary;
+        padding: 22px;
+        box-shadow: 0 0 20px $color-primary;
+      }
       &:last-child {
         margin-right: 0;
+        background: $color-red;
+        box-shadow: 0 0 20px $color-red;
       }
     }
   }

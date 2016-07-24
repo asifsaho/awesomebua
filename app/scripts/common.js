@@ -11,7 +11,7 @@ var isLeapYear = function( year ){ //leap year testing function
 };
 
 function months(currentYear){
-    "use strict";
+    'use strict';
 
     return [
         { name : 'January',     days : 31 },
