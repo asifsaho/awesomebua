@@ -33,68 +33,46 @@
     </div>
 
 
-    <div class="profile-slider-wrapper">
+    <div class="profile-slider-wrapper summery-slider-wrapper">
         <ul class="profile-slider" bx-slider>
-            <li ng-repeat="profile in profiles">
+            <li ng-repeat="summery in summaries">
                 <div class="slide-inner">
-                    <div class="profile-cover" style="background-image: url('{{profile.cover}}');"></div>
-
-                    <div class="text-center">
-                        <img class="propic" ng-src="{{profile.propic}}">
-                    </div>
-
-                    <p class="name" ng-bind="profile.name"></p>
-
-                    <p class="title" ng-bind="profile.title"></p>
-                    <p class="company" ng-bind="profile.company"></p>
-
-                    <div class="text-center social-acc">
-                        <a href="{{profile.facebook}}"><img src="images/facebook.svg" height="18"></a>
-                        <a href="{{profile.twitter}}"><img src="images/twitter.svg" height="18"></a>
-                        <a href="{{profile.skype}}"><img src="images/skype.svg" height="18"></a>
-                    </div>
-
-                    <div class="contact text-center">
-                        <a href="javascript:;"><img src="images/phone.svg" height="20"></a>
-                        <a href="javascript:;"><img src="images/phone.svg" height="40"></a>
-                        <a href="javascript:;"><img src="images/phone.svg" height="20"></a>
-                    </div>
+                    <table>
+                        <thead>
+                        <tr>
+                            <td>{{ summery.month + summery.year }}</td>
+                            <td><img class="pull-right" ng-src="{{summery.propic}}" height="35"></td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><img src="images/breakfast.svg" height="25"><span>Balance </span></td>
+                            <td>{{ summery.balance | currency }}</td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/lunch.svg" height="25"><span>Breakfast</span></td>
+                            <td>{{ summery.breakfast }}</td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/lunch.svg" height="25"><span>Lunch</span></td>
+                            <td>{{ summery.lunch }}</td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/dinner.svg" height="25"><span>Dinner</span></td>
+                            <td>{{ summery.dinner }}</td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/total.svg" height="25"><span>Total </span>Meal</td>
+                            <td>{{ summery.totalMeal }}</td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/cart.svg" height="25"><span>Shopping </span>Count</td>
+                            <td>{{ summery.shoppingTime }} Days</td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
             </li>
         </ul>
     </div>
-</div>
-
-<!--<div class="profile-page">-->
-    <!--<ul class="profile-slider">-->
-        <!--<li ng-repeat="profile in profiles">-->
-            <!--<div class="profile-cover" style="background-image: url('{{profile.cover}}');"></div>-->
-
-            <!--<div class="text-center">-->
-                <!--<img class="propic" ng-src="{{profile.propic}}">-->
-            <!--</div>-->
-
-            <!--<p class="name" ng-bind="profile.name"></p>-->
-
-            <!--<p class="title" ng-bind="profile.title"></p>-->
-            <!--<p class="company" ng-bind="profile.company"></p>-->
-
-            <!--<div class="text-center social-acc">-->
-                <!--<a href="{{profile.facebook}}"><img src="images/facebook.svg" height="18"></a>-->
-                <!--<a href="{{profile.twitter}}"><img src="images/twitter.svg" height="18"></a>-->
-                <!--<a href="{{profile.skype}}"><img src="images/skype.svg" height="18"></a>-->
-            <!--</div>-->
-
-            <!--<div class="contact text-center">-->
-                <!--<a href="javascript:;"><img src="images/phone.svg" height="55"></a>-->
-                <!--<a href="javascript:;"><img src="images/phone.svg" height="75"></a>-->
-                <!--<a href="javascript:;"><img src="images/phone.svg" height="55"></a>-->
-            <!--</div>-->
-        <!--</li>-->
-    <!--</ul>-->
-<!--</div>-->
-
-
-<div class="summery">
-
 </div>

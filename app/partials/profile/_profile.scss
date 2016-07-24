@@ -35,9 +35,11 @@
       }
       .bx-prev{
         left: 10px;
+        border-radius: 4px 0 0 0;
       }
       .bx-next {
         right: 10px;
+        border-radius: 4px 0 0 0;
       }
     }
   }
@@ -50,6 +52,7 @@
   .slide-inner {
     background: #fff;
     box-shadow: 0 2px 20px #b9b9b9;
+    border-radius: 4px;
   }
   .propic {
     border-radius: 50%;
@@ -60,6 +63,7 @@
   }
   .profile-cover {
     height: 160px;
+    border-radius: 4px 4px 0 0;
     background-size: cover;
     background-position: center;
   }
@@ -109,4 +113,45 @@
       }
     }
   }
+}
+
+.summery-slider-wrapper {
+  .slide-inner {
+    padding: 0 15px;
+  }
+  table {
+    width: 100%;
+  }
+  thead {
+    font-size: 23px;
+    td {
+      padding: 15px 0;
+      border-bottom: 2px solid $color-gray;
+      img {
+        border-radius: 50%;
+      }
+    }
+  }
+  tbody tr {
+    border-bottom: 2px solid $color-gray;
+    margin-left: 10px;
+    font-size: 16px;
+    td {
+      color: $color-text-normal;
+      padding: 15px 0;
+      font-family: $baseFont;
+      font-weight: 100;
+      span {
+        display: inline-block;
+        margin-left: 15px;
+      }
+    }
+    td:first-child {
+      text-align: left;
+    }
+    td:last-child {
+      text-align: right;
+    }
+  }
+  .bx-next, .bx-prev { display: none !important; }
 }

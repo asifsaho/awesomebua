@@ -47,4 +47,79 @@ angular.module('awesomebua').controller('ProfileController', function($scope){
             skype: 'asifsaho'
         }
     ];
+
+    $scope.summaries = [
+        {
+            name: 'Asif Nawaz',
+            propic: 'images/members/asifsaho.jpg',
+            month: 'January',
+            year: 2016,
+            balance: 1450,
+            breakfast: 12,
+            lunch: 11,
+            dinner: 20,
+            totalMeal: 43,
+            shoppingTime: 6
+        },
+        {
+            name: 'Asif Nawaz',
+            propic: 'images/members/asifsaho.jpg',
+            month: 'January',
+            year: 2016,
+            balance: 1450,
+            breakfast: 12,
+            lunch: 11,
+            dinner: 20,
+            totalMeal: 43,
+            shoppingTime: 6
+        },
+        {
+            name: 'Asif Nawaz',
+            propic: 'images/members/asifsaho.jpg',
+            month: 'January',
+            year: 2016,
+            balance: 1450,
+            breakfast: 12,
+            lunch: 11,
+            dinner: 20,
+            totalMeal: 43,
+            shoppingTime: 6
+        },
+        {
+            name: 'Asif Nawaz',
+            propic: 'images/members/asifsaho.jpg',
+            month: 'January',
+            year: 2016,
+            balance: 1450,
+            breakfast: 12,
+            lunch: 11,
+            dinner: 20,
+            totalMeal: 43,
+            shoppingTime: 6
+        },
+        {
+            name: 'Asif Nawaz',
+            propic: 'images/members/asifsaho.jpg',
+            month: 'January',
+            year: 2016,
+            balance: 1450,
+            breakfast: 12,
+            lunch: 11,
+            dinner: 20,
+            totalMeal: 43,
+            shoppingTime: 6
+        },
+        {
+            name: 'Asif Nawaz',
+            propic: 'images/members/asifsaho.jpg',
+            month: 'January',
+            year: 2016,
+            balance: 1450,
+            breakfast: 12,
+            lunch: 11,
+            dinner: 20,
+            totalMeal: 43,
+            shoppingTime: 6
+        }
+    ];
 });
