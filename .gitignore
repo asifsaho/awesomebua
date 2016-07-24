@@ -2,8 +2,7 @@ node_modules
 dist
 .tmp
 bower_components
-test/bower_components
-test/
+test
 
 *.log
 
@@ -28,36 +27,9 @@ Icon
 
 sitemap.xml
 sitemap.xml.gz
-api/wp-blog-header.php
-api/wp-cron.php
-api/wp-mail.php
-api/wp-settings.php
 readme.html
-api/wp-links-opml.php
-api/wp-signup.php
-api/wp-activate.php
-api/wp-config-sample.php
-api/wp-load.php
-api/wp-trackback.php
-api/wp-login.php
 xmlrpc.php
-api/wp-admin/
-api/wp-includes/
-api/wp-content/plugins/duplicator/
-api/wp-snapshots/
-api/wp-content/languages/
-api/wp-config.php
-api/wp-content/advanced-cache.php
-api/wp-content/backup-db/
-api/wp-content/backups/
-api/wp-content/blogs.dir/
-api/wp-content/cache/
-api/wp-content/upgrade/
-api/wp-content/uploads/
-api/wp-content/api/wp-cache-config.php
-api/wp-content/plugins/hello.php
-api/wp-content/plugins/rest-api
-
+api
 .htaccess
 license.txt
 readme.html
