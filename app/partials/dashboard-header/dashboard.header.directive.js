@@ -5,7 +5,7 @@
 (function(){
     'use strict';
 
-    angular.module('awesomebua').directive('dashHeader', function(){
+    awesomebua.directive('dashHeader', function(){
         return {
             restrict: 'E',
             templateUrl: 'partials/dashboard-header/dashboard.header.tpl.html',
@@ -13,7 +13,7 @@
         }
     });
 
-    angular.module('awesomebua').controller('DashboardHeaderController', function($scope){
+    awesomebua.controller('DashboardHeaderController', function($scope){
         $scope.notificationDropdown = [
             {
                 "text": "This is a long example notification",

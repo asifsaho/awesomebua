@@ -5,7 +5,7 @@
 (function(){
     'use strict';
 
-    angular.module('awesomebua').directive('bxSlider', function(){
+    awesomebua.directive('bxSlider', function(){
         return {
             restrict: 'A',
             link : function(scope, elem, attrs){

@@ -3,7 +3,7 @@
 (function () {
     'use strict';
 
-    angular.module('awesomebua').config(function ($stateProvider, $urlRouterProvider) {
+    awesomebua.config(function ($stateProvider, $urlRouterProvider) {
         $urlRouterProvider.otherwise('/');
         $stateProvider.state('home', {
             url: '/',

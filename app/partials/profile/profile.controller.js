@@ -1,4 +1,4 @@
-angular.module('awesomebua').controller('ProfileController', function($scope){
+awesomebua.controller('ProfileController', function($scope){
     "use strict";
 
     $scope.profiles = [

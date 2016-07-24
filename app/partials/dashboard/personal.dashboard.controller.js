@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    angular.module('awesomebua').controller('PersonalDashboardController', function ($scope) {
+    awesomebua.controller('PersonalDashboardController', function ($scope) {
 
         $scope.notificationAmount = 12; // static notification amount for future development
 

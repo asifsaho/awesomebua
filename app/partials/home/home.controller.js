@@ -2,7 +2,7 @@
     'use strict';
 
 
-    angular.module('awesomebua').controller('HomeController', function ($scope) {
+    awesomebua.controller('HomeController', function ($scope) {
 
         $scope.tab = 1;
 
