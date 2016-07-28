@@ -28,6 +28,11 @@
                 templateUrl: 'partials/profile/profile.tpl.html',
                 controller: 'ProfileController'
             })
+            .state('order', {
+                url: '/order',
+                templateUrl: 'partials/order/order.tpl.html',
+                controller: 'OrderController'
+            })
     });
 })();
 //# sourceMappingURL=route.js.map

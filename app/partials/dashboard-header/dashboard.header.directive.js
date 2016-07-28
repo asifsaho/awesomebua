@@ -44,7 +44,8 @@
             { menuTitle: 'Home', menuLink : 'home' },
             { menuTitle: 'Dashboard', menuLink : 'personal-dashboard' },
             { menuTitle: 'Global', menuLink : 'global-dashboard' },
-            { menuTitle: 'Profile', menuLink : 'profile' }
+            { menuTitle: 'Profile', menuLink : 'profile' },
+            { menuTitle: 'Order', menuLink : 'order' }
         ];
     })
 })();
