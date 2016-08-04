@@ -1,5 +1,29 @@
 <dash-header></dash-header>
 
 <div class="order-page">
-    <h1> {{ title }} </h1>
+    <div class="container">
+        <div class="calendar">
+            <div class="row">
+                <form name="order-form">
+                    <div class="month" ng-repeat="month in orderCalendar">
+                        <div class="month-heading" style="background-image: url({{month.thumb}})">
+                            <div class="overlay">
+                                <h2> {{ month.name }} </h2>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 day" ng-repeat="day in month.days">
+                            <label>
+                                <div class="date"> {{ $index + 1 }} </div>
+                                <div class="weekday">{{ day.name }}</div>
+                                <input ng-model="alu" type="checkbox">
+                                <!--<input ng-model="newObject['alu']" ng-true-value="1" ng-false-value="0" type="checkbox">-->
+                                <span class="status glyphicon glyphicon-ok"></span>
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </div>
